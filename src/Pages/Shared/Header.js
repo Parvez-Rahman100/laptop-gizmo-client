@@ -11,16 +11,8 @@ const Header = () => {
   
 </>
 
-
-// https://i.ibb.co/mv2tyVS/parts7.jpg
-// https://i.ibb.co/9gKbBRp/parts6.jpg
-// https://i.ibb.co/xq39kXh/parts5.jpg
-// https://i.ibb.co/JrVVQ1Z/parts4.jpg
-// https://i.ibb.co/Np9bxG7/parts3.jpg
-// https://i.ibb.co/xqFm2nG/parts2.jpg
-// https://i.ibb.co/L5CJgYZ/parts1.jpg
     return (
-      <div className="navbar bg-base-100 container mx-auto">
+      <div className="navbar bg-base-100">
       <div className="navbar-start">
           <div className="dropdown">
               <label tabIndex="0" className="btn btn-ghost lg:hidden">
