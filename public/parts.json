@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Cooler",
+        "price": "300",
+        "availableQuantity":"1000",
+        "description": "main types are warm, woody, oriental and fresh, with each effect brought out by different combinations of fragrances.",
+        "minimumOrder":"100",
+        "img": "https://i.ibb.co/ft83NtB/cooler.jpg"
+    },
+    {
+        "name": "Battery",
+        "price": "500",
+        "availableQuantity":"2000",
+        "description": "Fresh scents, like Davidoff Cool Water, generally rely on aquatic and citrus notes, whereas warm scents.",
+        "minimumOrder":"150",
+        "img": "https://i.ibb.co/6n7g0jK/battery.jpg"
+    },
+    {
+        "name": "Hard Disk",
+        "price": "700",
+        "availableQuantity":"2000",
+        "description": "Fresh fragrances usually comprise of citrus, water and green notes.",
+        "minimumOrder":"150",
+        "img": "https://i.ibb.co/yyC9sBR/hard-disk.jpg"
+        
+    },
+    {
+        "name": "Processor",
+        "price": "1500",
+        "availableQuantity":"1500",
+        "description": "Citrus-based fragrances are usually created with lemon, mandarin and bergamot, while water fragrances are made with aquatic notes",
+        "minimumOrder":"100",
+        "img": "https://i.ibb.co/qR0YYD0/processor.jpg"
+    },
+    {
+        "name": "Keyboard",
+        "price": "250",
+        "availableQuantity":"3000",
+        "description": "Floral fragrances are one of the most popular families, and one of the broadest.",
+        "minimumOrder":"200",
+        "img": "https://i.ibb.co/2gQB9FS/keyboard.jpg"
+    },
+    {
+        "name": "Ram",
+        "price": "900",
+        "availableQuantity":"1000",
+        "description": "Sweet and flowery scent will belong under this family, using notes such as roses, jasmine, lilies and peonies.",
+        "minimumOrder":"80",
+        "img": "https://i.ibb.co/qyJcsQ1/ram.jpg"
+    }
+    
+]
