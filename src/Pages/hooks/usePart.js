@@ -5,7 +5,8 @@ const usePart = () => {
     const [parts,setParts] = useState({});
     const {id} = useParams();
     useEffect(()=>{
-        const url = `http://localhost:5000/parts/${id}`;
+        const url = `https://laptopgizmo.herokuapp.com/parts/${id}`;
+        console.log(url);
         fetch(url)
         .then(res =>res.json())
         .then(data=>setParts(data))

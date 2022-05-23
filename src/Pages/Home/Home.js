@@ -1,14 +1,16 @@
 import React from 'react';
+import Parts from '../Parts/Parts';
 import Banner from './Banner';
-import LaptopParts from './LaptopParts';
+
 
 
 
 const Home = () => {
+    
     return (
         <div>
         <Banner></Banner>    
-        <LaptopParts></LaptopParts>        
+        <Parts></Parts>
         </div>
     );
 };
