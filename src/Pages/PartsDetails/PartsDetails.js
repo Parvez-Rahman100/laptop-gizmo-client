@@ -61,6 +61,7 @@ const PartsDetails = () => {
            toast.error(`You already have added this ${name} product`)
         }
       })
+      e.target.reset()
       
       
     }

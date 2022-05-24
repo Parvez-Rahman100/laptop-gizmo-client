@@ -11,6 +11,10 @@ import Footer from './Pages/Shared/Footer';
 import Header from './Pages/Shared/Header';
 import NotFound from './Pages/Shared/NotFound';
 import 'react-toastify/dist/ReactToastify.css'
+import DashBoard from './Pages/DashBoard/DashBoard';
+import MyOrders from './Pages/DashBoard/MyOrders';
+import MyProfile from './Pages/DashBoard/MyProfile';
+import AddReview from './Pages/DashBoard/AddReview';
 
 function App() {
   return (
@@ -22,6 +26,15 @@ function App() {
         <Route path='/partsDetails/:id' element={<RequireAuth><PartsDetails></PartsDetails></RequireAuth>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+
+        <Route path='/dashboard' element={<DashBoard></DashBoard>}>
+
+        <Route index element={<MyOrders></MyOrders>}></Route>
+        <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
+        <Route path='addreview' element={<AddReview></AddReview>}></Route>
+        
+        </Route>
+
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>

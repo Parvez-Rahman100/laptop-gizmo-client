@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
 const Login = () => {
@@ -35,7 +36,7 @@ const Login = () => {
     }
 
     if(error || gError){
-        signInError= <p className='text-red-500'><small>{error?.message || gError?.message }</small></p>
+        toast.error('Something went wrong')
     }
 
     const onSubmit = data => {
@@ -98,7 +99,7 @@ const Login = () => {
                         </label>
                     </div>
 
-                    {signInError}
+                    
                     <input className='btn w-full max-w-xs text-white' type="submit" value="Login" />
                 </form>
                 <p><small>New to Laptop Gizmo?  <Link className='text-black' to="/signup">Create New Account</Link></small></p>
