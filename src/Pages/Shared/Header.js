@@ -12,8 +12,7 @@ const Header = () => {
         
     };
   const menuItems = <>
-  <li><Link to="/">Home</Link></li>
-  <li><Link to="/parts">Parts</Link></li>
+  <li><Link to="/home">Home</Link></li>
   <li><Link to="/review">Review</Link></li>
   <li><Link to="/blogs">Blogs</Link></li>
   <li>{user ? <button className="btn btn-ghost" onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
@@ -31,7 +30,7 @@ const Header = () => {
                   {menuItems}
               </ul>
           </div>
-          <Link to="/" className="btn btn-ghost normal-case text-primary font-serif font-bold text-xl title">Laptop Gizmo</Link>
+          <Link to="/home" className="btn btn-ghost normal-case text-primary font-serif font-bold text-xl title">Laptop Gizmo</Link>
       </div>
       <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal p-0">

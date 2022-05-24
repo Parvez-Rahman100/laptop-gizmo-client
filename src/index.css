@@ -17,7 +17,25 @@ body {
   max-width:1280px;
 }
 .title{
-  letter-spacing: 4px;
+  letter-spacing: 6px;
+}
+.btn-primary{
+  color: white;
+}
+.bg-form{
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/752/194/470/circles-highlights-background-form-wallpaper-preview.jpg');
+  opacity: 0.8;
+}
+.bg-form:hover{
+  transform: scale(1.1);
+  transition: ease-in 1s;
+}
+.ph-color{
+  color: black;
+}
+input::placeholder{
+  color: black;
+  opacity: 0.8;
 }
 .backgroundImg{
   background-image: url('http://excellencetally.com/webapp/Admin/assets/img/backgrounds/2.jpg');

@@ -20,15 +20,15 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
-    if(user){
-        navigate('/home');
-    }
+    // if(user){
+    //     navigate('/home');
+    // }
 
-    // useEffect( () =>{
-    //     if (token) {
-    //         navigate(from, { replace: true });
-    //     }
-    // }, [token, from, navigate])
+    useEffect( () =>{
+        if (user) {
+            navigate(from, { replace: true });
+        }
+    }, [user, from, navigate])
 
     if (loading || gLoading) {
         return <Loading></Loading>
