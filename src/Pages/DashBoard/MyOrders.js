@@ -13,19 +13,19 @@ const MyOrders = () => {
       <tr>
         <th></th>
         <th>Product Name</th>
-        <th>Email</th>
+        <th className='text-center'>Email</th>
         <th>Order Quantity</th>
-        <th>Order Id</th>
+        <th className='text-center'>Order Id</th>
       </tr>
     </thead>
     <tbody>
 
         {
             orders.map((order,index)=><tr key={index}>
-                <th>1</th>
+                <th>{index + 1}</th>
                 <td>{order.productName}</td>
                 <td>{order.email}</td>
-                <td>{order.orderQuantity}</td>
+                <td className='text-center'>{order.orderQuantity}</td>
                 <td>{order.orderId}</td>
               </tr>)
         }

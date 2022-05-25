@@ -32,6 +32,9 @@ body {
 .ph-color{
   color: black;
 }
+.bg-notFound{
+  background-image: url('https://cdn.mos.cms.futurecdn.net/PuXipAW3AXUzUJ4uYyxPKC-1200-80.jpg');
+}
 input::placeholder{
   color: black;
   opacity: 0.8;

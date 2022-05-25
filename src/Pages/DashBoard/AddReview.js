@@ -68,10 +68,10 @@ const AddReview = () => {
                 
                 event.target.reset()
             });
-            console.log(reviews);
+            
             }
-            console.log(img);
-            console.log('imgbb', result);
+            
+            
         })
 
         const name = event.target.productName.value;

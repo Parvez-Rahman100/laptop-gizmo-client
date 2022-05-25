@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10 bg-neutral text-neutral-content">
+          <footer className="footer p-10 bg-neutral text-neutral-content">
   <div>
     <h2 className='text-4xl font-extrabold text-primary title'>Laptop Gizmo</h2>
     <p>Laptop Gizmo.<br/>Where you can find trustworthy tools.</p>

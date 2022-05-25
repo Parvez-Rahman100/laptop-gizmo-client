@@ -34,6 +34,9 @@ const PartsDetails = () => {
         orderQuantity : e.target.quantity.value,
         address : e.target.address.value
       }
+      if(Number(values.phone) !==11){
+        toast.error('Phone number must 11 digits')
+      }
       
       if(Number(values.quantity ) <  minimumOrder || ((Number(values.quantity)) > availableQuantity )){
         toast.error(`Value can not be lower than ${minimumOrder}
@@ -91,7 +94,7 @@ const PartsDetails = () => {
       <br />
       <input value={user.email} disabled name="email" type='email' className='rounded-lg  pl-2 border-4 my-2 ' onChange={handleChange} />
       <br />
-      <input placeholder='Enter your address' name="address" type='text' className='rounded-lg  pl-2 border-4 my-2 ' onChange={handleChange} />
+      <input placeholder='Enter your address' name="address" required type='text' className='rounded-lg  pl-2 border-4 my-2 ' onChange={handleChange} />
       <br />
       <input placeholder='Enter phone number' name='phone' maxLength='11' className=' rounded-lg border-4 my-2  pl-2' type="number" onChange={handleChange}  />
       <br />
