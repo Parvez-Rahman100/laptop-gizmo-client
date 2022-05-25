@@ -41,6 +41,11 @@ const AddReview = () => {
 
         }
 
+        if(Number(values.numericReview ) > 5){
+            toast.error(`Rating should be out of 5`);
+            return;
+          }
+
         fetch('https://laptopgizmo.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
@@ -51,13 +56,13 @@ const AddReview = () => {
             .then(res => res.json())
             .then(data => {
                 if(data.success){
-                    toast(`success`)
+                    toast.success(`successfully reviewed`)
                 }
                 else{
                     toast.error(`You already reviewed this (${name}) product`)
                 }
                 
-                
+                event.target.reset()
             });
     }
 
@@ -67,7 +72,7 @@ const AddReview = () => {
              <form onSubmit={handleAddReview} className='grid grid-cols-1 p-10 bg-form gap-3 rounded-3xl justify-items-center mt-2'>
                         <input type="text" name="name" value={user.displayName} disabled className="input input-bordered w-full max-w-xs" onChange={handleChange} />
                         <input type="email" name="email" value={user.email} disabled className="input input-bordered w-full max-w-xs" onChange={handleChange} />
-                        <input type="number" name="numericReview" maxlength="1" size="1" max="5" pattern="[0-5]*" placeholder='Your Review In Numeric'  className="input input-bordered w-full max-w-xs" onChange={handleChange} />
+                        <input type="number" name="numericReview"  placeholder='Your Review In Numeric'  className="input input-bordered w-full max-w-xs" onChange={handleChange} />
                         <textarea type="text" name="review" placeholder="Your Review" className="input input-bordered w-full p-3 max-w-xs" onChange={handleChange} />
                         <select name="productName" className="select select-bordered w-full max-w-xs">
                         {
