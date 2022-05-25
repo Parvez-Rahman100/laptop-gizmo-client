@@ -5,7 +5,7 @@ import useOrder from '../hooks/useOrder';
 
 const MyProfile = () => {
     const [user] = useAuthState(auth);
-    console.log(user);
+    
     const [orders] = useOrder();
     return (
         <div className="my-10"> 

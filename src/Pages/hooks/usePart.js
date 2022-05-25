@@ -6,7 +6,6 @@ const usePart = () => {
     const {id} = useParams();
     useEffect(()=>{
         const url = `https://laptopgizmo.herokuapp.com/parts/${id}`;
-        console.log(url);
         fetch(url)
         .then(res =>res.json())
         .then(data=>setParts(data))

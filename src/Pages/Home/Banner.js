@@ -3,8 +3,8 @@ import banner from '../../assests/banner.jpg'
 
 const Banner = () => {
     return (
-        <div> 
-            <div  className="hero min-h-screen bg-base-100">
+        <div > 
+            <div  className="bg-banner rounded-3xl hero min-h-screen bg-base-100">
   <div  className="hero-content flex-col lg:flex-row-reverse">
     <img src={banner} className="max-w-sm rounded-lg shadow-2xl" alt='hero' />
     <div>

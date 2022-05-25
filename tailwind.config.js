@@ -7,7 +7,7 @@ module.exports = {
       themes: [
         {
           gizmo: {
-            primary: "#10ac84",
+            primary: "#c0392b",
             secondary: "#2e86de",
             accent: "#37cdbe",
             neutral: "#3d4451",

@@ -26,6 +26,9 @@ body {
   background-image: url('https://c4.wallpaperflare.com/wallpaper/752/194/470/circles-highlights-background-form-wallpaper-preview.jpg');
   opacity: 0.8;
 }
+.bg-banner{
+  background-image: url('https://thumbs.dreamstime.com/b/light-orange-color-wide-banner-background-blank-template-abstract-illustration-204821382.jpg');
+}
 .ph-color{
   color: black;
 }
