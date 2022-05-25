@@ -27,6 +27,7 @@ const PartsDetails = () => {
 
       const order ={
         orderId : _id,
+        productName : name,
         name : e.target.name.value,
         email : e.target.email.value,
         phone : e.target.phone.value,
@@ -43,7 +44,7 @@ const PartsDetails = () => {
         // toast.success('Success')
       }
 
-      fetch('https://laptopgizmo.herokuapp.com/order',{
+      fetch('http://localhost:5000/order',{
         method:'POST',
         headers:{
           'content-type':'application/json'
