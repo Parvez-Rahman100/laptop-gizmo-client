@@ -4,7 +4,6 @@ import useOrder from '../hooks/useOrder';
 
 const MyOrders = () => {
     const [orders] = useOrder();
-        
     return (
         <div>
             <div class="overflow-x-auto">
@@ -22,7 +21,7 @@ const MyOrders = () => {
     <tbody>
 
         {
-            orders.map(order=><tr>
+            orders.map((order,index)=><tr key={index}>
                 <th>1</th>
                 <td>{order.productName}</td>
                 <td>{order.email}</td>

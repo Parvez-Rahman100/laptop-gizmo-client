@@ -26,10 +26,6 @@ body {
   background-image: url('https://c4.wallpaperflare.com/wallpaper/752/194/470/circles-highlights-background-form-wallpaper-preview.jpg');
   opacity: 0.8;
 }
-.bg-form:hover{
-  transform: scale(1.1);
-  transition: ease-in 1s;
-}
 .ph-color{
   color: black;
 }
