@@ -8,7 +8,7 @@ import useOrder from '../hooks/useOrder';
 
 const AddReview = () => {
     const [user] = useAuthState(auth);
-    
+    const imgbbKey = '95d8711366009965251a26e8ed6dec64';
     
     const [orders] = useOrder();
 
@@ -24,28 +24,33 @@ const AddReview = () => {
    const handleChange = (e)=> {
      const {name , value}= e.target;
       setValues({...values, [name]:value})
-   }
+      
+    }
     const handleAddReview = event => {
         event.preventDefault();
-        const name = event.target.productName.value;
-        const userPhoto = user.photoURL;
-
-        const reviews = {
-            productName: name,
-            userPhoto : userPhoto,
-            userName : event.target.name.value,
-            email : event.target.email.value,
-            numericReview : event.target.numericReview.value,
-            reviewed : event.target.review.value,
-
-        }
-
-        if(Number(values.numericReview ) > 5 ){
-            toast.error(`Rating should be out of 5`);
-            return;
-          }
-
-        fetch('https://laptopgizmo.herokuapp.com/reviews', {
+        const img = event.target.reviewerPhoto.files[0];
+        const  formData = new FormData(); 
+        formData.append('image',img) 
+        const url = `https://api.imgbb.com/1/upload?key=${imgbbKey} `;
+        fetch(url,{
+            method:"POST",
+            body:formData
+        })
+        .then(res=>res.json())
+        .then(result=>{
+            if(result.success){
+                const img = result.data.url;
+                const reviews = {
+                    productName: name,
+                    reviwerPhoto : img,
+                    userPhoto : userPhoto,
+                    userName : event.target.name.value,
+                    email : event.target.email.value,
+                    numericReview : event.target.numericReview.value,
+                    reviewed : event.target.review.value,
+        
+                }
+                fetch('https://laptopgizmo.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -63,6 +68,23 @@ const AddReview = () => {
                 
                 event.target.reset()
             });
+            console.log(reviews);
+            }
+            console.log(img);
+            console.log('imgbb', result);
+        })
+
+        const name = event.target.productName.value;
+        const userPhoto = user.photoURL;
+
+        
+        
+        if(Number(values.numericReview ) > 5 ){
+            toast.error(`Rating should be out of 5`);
+            return;
+          }
+
+        
     }
 
     return (
@@ -80,6 +102,7 @@ const AddReview = () => {
                               })
                         }
                         </select>
+                        <input type="file" name="reviewerPhoto" required className="input input-bordered w-full max-w-xs" onChange={handleChange} />
                         <input type="submit" value="Submit" className="btn btn-outline text-white w-full max-w-xs" />
                     </form>
         </div>
