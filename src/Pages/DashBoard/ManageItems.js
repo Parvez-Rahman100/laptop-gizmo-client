@@ -35,27 +35,27 @@ const ManageItems = () => {
                 <input className=' font-bold mb-1 p-3 rounded '
                     name='name'
                     placeholder='Product Name'
-                    {...register("name")} />
+                    {...register("name",{ required: true })} />
 
                 <textarea className='font-bold mb-1 p-3 rounded '
-                    name='description'
+                    name='description' 
                     placeholder='Description'
-                    {...register("description")} />
+                    {...register("description",{ required: true })} />
 
                 <input className='font-bold mb-1 p-3 rounded '
                     name='price'
                     placeholder='Price'
-                    type="number" {...register("price")} />
+                    type="number" {...register("price",{ required: true })} />
 
                 <input className='font-bold mb-1 p-3 rounded '
                     name='minimumOrder'
                     placeholder='Min Order'
-                    type="number" {...register("order")} />
+                    type="number" {...register("minimumOrder",{ required: true })} />
 
                 <input className='font-bold mb-1 p-3 rounded '
                     name='availableQuantity'
                     placeholder='Quantity'
-                    type="number" {...register("available")} />
+                    type="number" {...register("availableQuantity",{ required: true })} />
 
                 <input className='mb-2 w-50 mx-auto bg-prmary mt-2 px-4 py-2 rounded text-large font-semibold btn btn-primary'
                     type="submit"
