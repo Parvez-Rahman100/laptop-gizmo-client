@@ -10,7 +10,7 @@ const Part = ({part}) => {
     return (
         <div>
             <div className="card max-w-lg bg-base-100 p-8 shadow-xl rounded-xl">
-  <figure><img className=' rounded-xl' src={img} alt="Shoes" /></figure>
+  <figure><img className=' rounded-xl' src={img} alt="parts" /></figure>
   <div className="card-body">
     <div className='flex justify-between items-center '>
     <h2 className="card-title"> {name}</h2>
