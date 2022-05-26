@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import User from './User';
 
 const Users = () => {
-    const {data : users, isLoading} = useQuery('users',()=>fetch('https://laptopgizmo.herokuapp.com/users',{
+    const {data : users, isLoading,refetch} = useQuery('users',()=>fetch('https://laptopgizmo.herokuapp.com/users',{
         headers:{
             authorization:`Bearer ${localStorage.getItem('accessToken')}`
         }
@@ -33,6 +33,7 @@ const Users = () => {
           key={user._id}
           index={index}
           user={user}
+          refetch={refetch}
           ></User>)
       }
      
