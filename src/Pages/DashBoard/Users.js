@@ -4,7 +4,11 @@ import Loading from '../Shared/Loading';
 import User from './User';
 
 const Users = () => {
-    const {data : users, isLoading} = useQuery('users',()=>fetch('https://laptopgizmo.herokuapp.com/users').then(res=>res.json()));
+    const {data : users, isLoading} = useQuery('users',()=>fetch('https://laptopgizmo.herokuapp.com/users',{
+        headers:{
+            authorization:`Bearer ${localStorage.getItem('accessToken')}`
+        }
+    }).then(res=>res.json()));
     if(isLoading){
         return <Loading></Loading>
     }
