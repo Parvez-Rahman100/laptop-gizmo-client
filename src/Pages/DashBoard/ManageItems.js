@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import DeleteProduct from './DeleteProduct';
 
 
 const ManageItems = () => {
@@ -27,7 +28,7 @@ const ManageItems = () => {
             <h1 className='text-center text-3xl font-extrabold mt-5'>Add Product</h1>
             <form className='flex flex-col px-5  lg:w-3/6 mx-auto bg-form p-10 mt-6'
                 onSubmit={handleSubmit(onSubmit)}>
-                <input className=' font-bold text-white mb-1 p-3 rounded' name='img'
+                <input className=' font-bold text-black mb-1 p-3 rounded' name='img'
                     placeholder='Photo Url'
                     type="text" {...register("img")} />
 
@@ -60,7 +61,7 @@ const ManageItems = () => {
                     type="submit"
                     value="Add products" />
             </form>
-            
+            <DeleteProduct></DeleteProduct>
         </div>
     );
 };
