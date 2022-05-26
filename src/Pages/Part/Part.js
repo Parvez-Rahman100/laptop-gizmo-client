@@ -14,7 +14,7 @@ const Part = ({part}) => {
   <div className="card-body">
     <div className='flex justify-between items-center '>
     <h2 className="card-title"> {name}</h2>
-    <h4 className='font-bold'>Price :${price}</h4>
+    <h4 className='font-bold ml-3'>Price :${price}</h4>
     </div>
     <h6>Available Quantity : {availableQuantity}</h6>
     <h6>Minimum Order : {minimumOrder}</h6>

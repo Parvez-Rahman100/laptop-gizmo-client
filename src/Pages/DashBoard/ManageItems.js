@@ -48,12 +48,12 @@ const ManageItems = () => {
                     type="number" {...register("price")} />
 
                 <input className='font-bold mb-1 p-3 rounded '
-                    name='order'
+                    name='minimumOrder'
                     placeholder='Min Order'
                     type="number" {...register("order")} />
 
                 <input className='font-bold mb-1 p-3 rounded '
-                    name='available'
+                    name='availableQuantity'
                     placeholder='Quantity'
                     type="number" {...register("available")} />
 
