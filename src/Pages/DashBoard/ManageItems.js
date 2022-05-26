@@ -8,7 +8,7 @@ const ManageItems = () => {
 
 
     const onSubmit = data => {
-        fetch('http://localhost:5000/parts', {
+        fetch('https://laptopgizmo.herokuapp.com/parts', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"
