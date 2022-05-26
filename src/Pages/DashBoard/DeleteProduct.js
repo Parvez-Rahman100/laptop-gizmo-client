@@ -4,7 +4,7 @@ import DeleteProductCart from './DeleteProductCart';
 const DeleteProduct = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('https://medz-app.herokuapp.com/parts')
+        fetch('https://laptopgizmo.herokuapp.com/parts')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [products])
