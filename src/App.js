@@ -17,6 +17,7 @@ import MyProfile from './Pages/DashBoard/MyProfile';
 import AddReview from './Pages/DashBoard/AddReview';
 import Users from './Pages/DashBoard/Users';
 import ManageItems from './Pages/DashBoard/ManageItems';
+import MyPortfolio from './Pages/MyPorfolio/MyPortfolio';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path='/partsDetails/:id' element={<RequireAuth><PartsDetails></PartsDetails></RequireAuth>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/portfolio' element={<MyPortfolio></MyPortfolio>}></Route>
 
         <Route path='/dashboard' element={<RequireAuth><DashBoard></DashBoard></RequireAuth>}>
 
