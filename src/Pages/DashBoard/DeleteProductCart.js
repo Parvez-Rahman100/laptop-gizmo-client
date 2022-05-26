@@ -25,11 +25,11 @@ const DeleteProductCart = ({ product, index }) => {
     }
     return (
         <tr>
-            <th className='font-semibold text-center bg-cyan-100 '>{index + 1}</th>
-            <td className='font-semibold text-start bg-cyan-100 '>{name}</td>
-            <td className='font-semibold text-start bg-cyan-100 '>{_id}</td>
-            <td className='font-semibold text-start bg-cyan-100 '></td>
-            <td className='font-semibold text-center bg-cyan-100 '>
+            <th className='font-semibold text-center bg-accent '>{index + 1}</th>
+            <td className='font-semibold text-start bg-accent '>{name}</td>
+            <td className='font-semibold text-start bg-accent '>{_id}</td>
+            <td className='font-semibold text-start bg-accent '></td>
+            <td className='font-semibold text-center bg-accent '>
                 <button
                     onClick={() => handleProductsDelete(product._id)}
                     className='btn btn-primary px-5 py-2 rounded text-white font-bold'

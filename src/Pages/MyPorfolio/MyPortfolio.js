@@ -55,11 +55,12 @@ const MyPortfolio = () => {
   </ul>
 </div>
 <h1 className='text-center text-xl font-bold text-primary'>Three of projects</h1>
-        <Link className='text-center block' to='https://perfumes-granary.web.app/'>https://perfumes-granary.web.app/</Link>
         
-        <Link className='text-center block' to='https://vision-of-wedding-photographer.web.app/'>https://vision-of-wedding-photographer.web.app/</Link>
+        <a className='text-center block' href='https://perfumes-granary.web.app/'>https://perfumes-granary.web.app/</a>
         
-        <Link className='text-center block' to='https://crazy-movie-reviews-parvez.netlify.app/dashboard'>https://crazy-movie-reviews-parvez.netlify.app/</Link>
+        <a className='text-center block' href='https://vision-of-wedding-photographer.web.app/'>https://vision-of-wedding-photographer.web.app/</a>
+        
+        <a className='text-center block' href='https://crazy-movie-reviews-parvez.netlify.app/dashboard'>https://crazy-movie-reviews-parvez.netlify.app/</a>
         </div>
     );
 };

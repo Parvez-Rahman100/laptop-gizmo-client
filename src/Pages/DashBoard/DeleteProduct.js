@@ -17,10 +17,10 @@ const DeleteProduct = () => {
                     <thead className='bg-cyan-400'>
                         <tr>
                             <th className='bg-cyan-400'></th>
-                            <th className='text-sm font-extrabold text-Start bg-cyan-400'>Product Name</th>
-                            <th className='text-sm font-extrabold text-start bg-cyan-400'>Product Id</th>
-                            <th className='text-sm font-extrabold text-center bg-cyan-400'></th>
-                            <th className='text-sm font-extrabold text-center bg-cyan-400'></th>
+                            <th className='text-sm font-extrabold text-Start '>Product Name</th>
+                            <th className='text-sm font-extrabold text-start '>Product Id</th>
+                            <th className='text-sm font-extrabold text-center '></th>
+                            <th className='text-sm font-extrabold text-center '></th>
                         </tr>
                     </thead>
                     <tbody>
