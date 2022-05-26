@@ -8,8 +8,8 @@ const Banner = () => {
   <div  className="hero-content flex-col lg:flex-row-reverse">
     <img src={banner} className="max-w-sm rounded-lg shadow-2xl" alt='hero' />
     <div>
-      <h1  className="text-5xl font-bold">Box Office News!</h1>
-      <p  className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <h1  className="text-5xl font-bold">Laptop Gizmo is the most reliable gizmo in BD</h1>
+      <p  className="py-6">We have covered all of the budget range for laptops. You can also buy a genuine official Apple Macbook Air or Macbook Pro laptop gizmo from our shop. .</p>
       <button  className="btn btn-primary text-white">Get Started</button>
     </div>
   </div>

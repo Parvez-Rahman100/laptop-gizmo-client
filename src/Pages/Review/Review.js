@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Review = ({review}) => {
-    console.log(review);
     const {email,numericReview,productName,reviewed,reviwerPhoto,userName,userPhoto} = review;
     return (
         <div>
