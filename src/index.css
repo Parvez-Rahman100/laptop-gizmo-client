@@ -13,33 +13,37 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container{
-  max-width:1280px;
+.container {
+  max-width: 1280px;
 }
-.title{
+
+.title {
   letter-spacing: 6px;
 }
-.btn-primary{
+
+.btn-primary {
   color: white;
 }
-.bg-form{
+
+.bg-form {
   background-image: url('https://i.ibb.co/51vSRKH/circles-highlights-background-form-wallpaper-preview.jpg');
   opacity: 0.8;
 }
-.bg-banner{
-  background-image: url('https://i.ibb.co/j3WXdy3/light-orange-color-wide-banner-background-blank-template-abstract-illustration-204821382.jpg');
-}
-.ph-color{
+
+.ph-color {
   color: black;
 }
-.bg-notFound{
+
+.bg-notFound {
   background-image: url('https://i.ibb.co/TtXGb1t/Pu-Xip-AW3-AXUz-UJ4u-Yyx-PKC-1200-80.jpg');
 }
-input::placeholder{
+
+input::placeholder {
   color: black;
   opacity: 0.8;
 }
-.backgroundImg{
+
+.backgroundImg {
   background-image: url('http://excellencetally.com/webapp/Admin/assets/img/backgrounds/2.jpg');
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
