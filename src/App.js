@@ -21,11 +21,11 @@ import MyPortfolio from './Pages/MyPorfolio/MyPortfolio';
 
 function App() {
   return (
-    <div className="App container mx-auto">
+    <div className="App ">
       <Header></Header>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/home' element={<Home/>}></Route>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/home' element={<Home />}></Route>
         <Route path='/partsDetails/:id' element={<RequireAuth><PartsDetails></PartsDetails></RequireAuth>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
@@ -33,12 +33,12 @@ function App() {
 
         <Route path='/dashboard' element={<RequireAuth><DashBoard></DashBoard></RequireAuth>}>
 
-        <Route index element={<MyOrders></MyOrders>}></Route>
-        <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
-        <Route path='addreview' element={<AddReview></AddReview>}></Route>
-        <Route path='users' element={<Users></Users>}></Route>
-        <Route path='addproduct' element={<ManageItems></ManageItems>}></Route>
-        
+          <Route index element={<MyOrders></MyOrders>}></Route>
+          <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
+          <Route path='addreview' element={<AddReview></AddReview>}></Route>
+          <Route path='users' element={<Users></Users>}></Route>
+          <Route path='addproduct' element={<ManageItems></ManageItems>}></Route>
+
         </Route>
 
         <Route path='/signup' element={<SignUp></SignUp>}></Route>

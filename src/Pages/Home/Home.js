@@ -7,12 +7,12 @@ import Banner from './Banner';
 
 
 const Home = () => {
-    
+
     return (
-        <div>
-        <Banner></Banner>    
-        <Parts></Parts>
-        <Reviews></Reviews>
+        <div className='container mx-auto'>
+            <Banner></Banner>
+            <Parts></Parts>
+            <Reviews></Reviews>
         </div>
     );
 };
