@@ -39,14 +39,16 @@ body {
 }
 
 input::placeholder {
-  color: black;
+  color: white;
   opacity: 0.8;
 }
 
 .backgroundImg {
-  background-image: url('http://excellencetally.com/webapp/Admin/assets/img/backgrounds/2.jpg');
+  background-image: url('https://i.ibb.co/bbr8qLM/blake-connally-IKUYGCFmfw4-unsplash.jpg');
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  background-size: cover;
+  background-position: center;
 }
 
 code {
